@@ -1,21 +1,8 @@
 import React from 'react'
 import { View } from 'react-native'
 import styles from './styles'
-import {
-  useTheme,
-  Avatar,
-  Title,
-  Caption,
-  Paragraph,
-  Drawer,
-  Text,
-  TouchableRipple,
-  Switch
-} from 'react-native-paper'
-import {
-  DrawerContentScrollView,
-  DrawerItem
-} from '@react-navigation/drawer'
+import { Title, Caption, Drawer } from 'react-native-paper'
+import { DrawerContentScrollView } from '@react-navigation/drawer'
 import Icon from 'react-native-vector-icons/FontAwesome5'
 
 const DrawerContent = (props) => {
@@ -36,7 +23,7 @@ const DrawerContent = (props) => {
               )}
               label='Cashier'
               onPress={() => {
-                props.navigation.navigate('MyTabNavigator')
+                props.navigation.navigate('TopTab')
                 setActive('Cashier')
               }}
               active={active === 'Cashier'}
