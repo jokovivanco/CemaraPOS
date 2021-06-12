@@ -1,0 +1,5 @@
+export { default as InterRegular } from './InterRegular'
+export { default as InterMedium } from './InterMedium'
+export { default as InterLight } from './InterLight'
+export { default as InterBold } from './InterBold'
+export { default as InterBlack } from './InterBlack'
